@@ -29,12 +29,32 @@ def view_assignments():
             print("Course:", assignment["course"])
             print("Due Date:", assignment["due_date"])
 
+def delete_assignment():
+            if len(assignments) == 0:
+                print("No assignments available to delete.")
+                return
+
+            view_assignments()
+
+            try:
+                number = int(input("Enter the assignment number to delete: "))
+
+                if 1 <= number <= len(assignments):
+                    removed_assignment = assignments.pop(number - 1)
+                    print(removed_assignment["name"], "was deleted successfully.")
+                else:
+                    print("Invalid assignment number.")
+
+            except ValueError:
+                print("Please enter a whole number.")
+
 
 def display_menu():
     print("\nStudent Assignment Tracker")
     print("1. Add Assignment")
     print("2. View Assignments")
-    print("3. Exit")
+    print("3. Delete Assignment")
+    print("4. Exit")
 
 
 def main():
@@ -47,10 +67,12 @@ def main():
         elif choice == "2":
             view_assignments()
         elif choice == "3":
+            delete_assignment()
+        elif choice == "4":
             print("Goodbye!")
             break
         else:
-            print("Invalid choice. Please enter 1, 2, or 3.")
+            print("Invalid choice. Please enter 1, 2, 3, or 4.")
 
 
 main()

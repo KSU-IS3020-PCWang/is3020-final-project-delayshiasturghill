@@ -2,31 +2,46 @@
 
 ## Student and Project Information
 
-- Student name:
-- GitHub username:
-- Project title:
-- Application purpose:
+- Student name: Delayshia Sturghill
+- GitHub username: delayshiasturghill
+- Project title: Student Assignment Tracker
+- Application purpose: This application helps students organize and manage assignments by tracking courses, due dates, priorites, and completion status.
 
 ## How to Run the Application
-
-Explain the required Python version, required files, and the exact steps for starting the application in PyCharm.
+1. Open the project in Pycharm
+2. Open the 'main.py' file.
+3. Click the Run button
+4. Follow the menu prompts in the terminal.
 
 ## Major Features
-
-List the major user-facing features implemented in the final application.
-
+- Add a new assignment
+- View all assignments
+- Search for assignments
+- Update assignment information
+- Change assignment status
+- Delete assignments
+- Display assignment summaries
+- Save and load assignment data using a CSV file
 ## Python Concepts Used
-
-Explain how the application uses functions, collections, conditionals, loops, file persistence, and exception handling.
-
+- Variables 
+- Lists
+- Dictionaries
+- Functions
+- Loops
+- Conditionals
+- User input
+- Exception handling (try/except)
+- CSV file reading and writing 
 ## Data Files
+The application stores assignment information in a CSV file. Each record include:
 
-Describe each CSV or JSON file and provide a brief explanation of its fields.
-
+- Assignment Name
+- Course
+- Due date
+- Priority
+- Status
 ## Testing Summary
-
-Describe the major scenarios tested, including invalid input and file-related errors.
-
+The application will be tested by adding, updating, searching, dleting, saving, and loading assignments to ensure all features work correctly
 ## AI Use
 
 Complete `AI_USAGE.md` and summarize the most important AI-assisted improvements here.
